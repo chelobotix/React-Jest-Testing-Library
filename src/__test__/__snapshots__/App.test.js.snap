@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading type Tree 1`] = `
+[
+  <h1>
+    Works!
+  </h1>,
+  <h2>
+    React Jest Test
+  </h2>,
+  <h3
+    data-testid="h3_Id"
+  >
+    Test by data-testid
+  </h3>,
+  <p>
+    0
+  </p>,
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Increment
+  </button>,
+]
+`;

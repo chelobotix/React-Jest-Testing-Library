@@ -1,22 +1,14 @@
-import react, { useEffect, useState } from 'react'
+import {useState} from 'react'
 
 function App() {
-    const [todos, setTodos] = useState([])
-
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/todos')
-            .then((response) => response.json())
-            .then((json) => setTodos(json))
-    }, [])
-
+    const [counter, setCounter] = useState(0);
     return (
         <>
-            {todos.map((todo) => (
-                <div key={todo.id}>
-                    <h1>{todo.title}</h1>
-                    <p>{todo.completed}</p>
-                </div>
-            ))}
+            <h1>Works!</h1>
+            <h2>React Jest Test</h2>
+            <h3 data-testid="h3_Id">Test by data-testid</h3>
+            <p>{counter}</p>
+            <button type="button" onClick={() => setCounter(counter + 1)}>Increment</button>
         </>
     )
 }
